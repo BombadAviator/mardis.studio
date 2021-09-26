@@ -1,0 +1,58 @@
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --evergreen: #264546;
+  --silver: #EDECEB;
+  --copper: #A85F48;
+  --sky: #ADC5D0;
+  --sherbert: #F99157;
+
+  --buttonprimary: #A85F48;
+  --buttonprimaryhover: #F99157;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+  font-family: brandontext-bold;
+  src: url(fonts/brandontext-bold.woff2);
+}
+@font-face {
+  font-family: brandontext-medium;
+  src: url(fonts/brandontext-medium.woff2);
+}
+@font-face {
+  font-family: brandontext-regular;
+  src: url(fonts/brandontext-regular.woff2);
+}
+h1 {
+  font-family: "brandontext-bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1rem;
+}
+
+  /* Objects
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  background: var(--evergreen);
+  color: var(--silver);
+  letter-spacing: .03rem;
+}
+
+.container {
+  margin-top: 20%;
+}
+
+.button-primary {
+  background-color: var(--copper);
+  border-color: var(--copper); }
+}
+
+#projects {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.project {
+  border: 1px solid var(--silver);
+  border-radius: 6px;
+}
