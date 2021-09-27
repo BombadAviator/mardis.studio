@@ -58,7 +58,7 @@ img {
 }
 
 h1 {
-  letter-spacing: 1rem;
+  
   font-family: 'BrandonText-Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 header {
   text-align: center;
-  margin-top: 25rem;
+  margin-top: 15rem;
 }
 .projectstyle {
   padding: 1.6rem;
