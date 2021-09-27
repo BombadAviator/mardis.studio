@@ -2,8 +2,10 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
   --evergreen: #264546;
+  --darkevergreen: #1D3435;
   --silver: #EDECEB;
   --copper: #A85F48;
+  --darkcopper: #92533F;
   --sky: #ADC5D0;
   --sherbert: #F99157;
 
@@ -26,7 +28,6 @@
   src: url(fonts/brandontext-regular.woff2);
 }
 h1 {
-  font-family: "brandontext-bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 1rem;
 }
 
@@ -37,19 +38,24 @@ body {
   color: var(--silver);
   letter-spacing: .03rem;
 }
-
-.container {
-  margin-top: 20%;
+img {
+  max-width: 96px;
 }
-
-.button-primary {
-  background-color: var(--copper);
-  border-color: var(--copper);
-}
-
-.project {
-  border: 1px solid var(--silver);
-  border-radius: 6px;
-  margin-bottom: .75rem;
+header {
   text-align: center;
+  margin-top: 25rem;
+}
+.projectstyle {
+  padding: 1.6rem;
+  border: 1px solid var(--darkevergreen);
+  border-radius: 6px;
+  text-align: center;
+}
+.button {
+  background-color: var(--copper);
+  border: 1px solid var(--darkevergreen);
+}
+.button:hover {
+  background-color: var(--evergreen);
+  border: 1px solid var(--darkevergreen);
 }
