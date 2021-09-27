@@ -58,7 +58,8 @@ img {
 }
 
 h2 {
-  letter-spacing: 1.6rem;
+  letter-spacing: 2.4vw;
+  font-size: 6vw;
   font-family: 'BrandonText-Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
