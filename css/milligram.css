@@ -296,12 +296,6 @@ input[type='radio'] {
 
 .row {
   display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
   flex-direction: row;
   padding: 0;
   width: 100%;
@@ -317,7 +311,6 @@ input[type='radio'] {
 
 .row.row-wrap {
   flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
 }
 
 .row.row-top {

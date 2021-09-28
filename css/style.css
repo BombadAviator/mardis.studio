@@ -73,7 +73,9 @@ body {
 header {
   text-align: center;
   margin-top: 15rem;
+  margin-bottom: 5rem;
 }
+
 .projectstyle {
   padding: 1.6rem;
   border: 1px solid var(--darkevergreen);
