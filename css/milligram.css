@@ -295,6 +295,10 @@ input[type='radio'] {
 }
 
 .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   padding: 0;
