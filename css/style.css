@@ -13,13 +13,6 @@
   --buttonprimaryhover: #F99157;
 }
 
-/* Images
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-img {
-  max-width: 96px;
-}
-
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
@@ -84,18 +77,30 @@ header {
 }
 
 .projectstyle {
-  padding: 1.6rem;
   margin: 1rem;
   border: 1px solid var(--darkevergreen);
   border-radius: 6px;
   text-align: center;
+  transition: border-color ease-in-out .3s;
+}
+.projectstyle:hover {
+  border: 1px solid var(--silver);
+  border-radius: 6px;
+  transition: border-color ease-in-out .3s;
+}
+
+.projectstyle img{
+  padding: 10px 10px 4px 10px;
+  max-width: 96px;
 }
 
 .button {
   background-color: var(--copper);
   border: 1px solid var(--darkevergreen);
+  transition: background-color ease-in-out .3s;
 }
 .button:hover {
   background-color: var(--evergreen);
   border: 1px solid var(--darkevergreen);
+  transition: background-color ease-in-out .3s;
 }
