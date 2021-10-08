@@ -46,7 +46,7 @@
   font-style: normal;
 }
 
-h2 {
+h1 {
   letter-spacing: 2.2vw;
   font-size: clamp(1rem, -0.6667rem + 7.4074vw, 6rem);
   font-family: 'BrandonText-Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -102,4 +102,16 @@ header {
   background-color: var(--evergreen);
   border: 1px solid var(--darkevergreen);
   transition: background-color ease-in-out .3s;
+}
+
+
+
+
+/* Animation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
 }

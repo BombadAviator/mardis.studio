@@ -13,10 +13,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Fonts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -27,6 +23,35 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scripts/anime.min.js" type="text/javascript"></script>
+
+  <script>
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml12');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+      .add({
+        targets: '.ml12 .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: (el, i) => 500 + 30 * i
+      }).add({
+        targets: '.ml12 .letter',
+        translateX: [0,-30],
+        opacity: [1,0],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: (el, i) => 100 + 30 * i
+      });
+
+    </script>
 
 </head>
 <body>
@@ -39,7 +64,7 @@
         <section class="container">
           <div class="row">
             <div class="column">
-              <h2>MARDIS.STUDIO</h2>
+              <h1 class="ml12">MARDIS.STUDIO</h1>
               <p>Clean Code, Pixels in order, Good Brews, Stuff made by hand, These are a few of our favorite things.</p>
               <a class="button" href="mailto:howdy@mardis.studio">Talk to a Mardis</a>
             </div>
