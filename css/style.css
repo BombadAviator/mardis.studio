@@ -23,6 +23,16 @@
        url('../fonts/BrandonText-Bold.ttf') format('truetype'),
        url('../fonts/BrandonText-Bold.woff') format('woff'),
        url('../fonts/BrandonText-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BrandonText-Regular';
+  src: url('../fonts/BrandonText-Regular.eot');
+  src: url('../fonts/BrandonText-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/BrandonText-Regular.ttf') format('truetype'),
+       url('../fonts/BrandonText-Regular.woff') format('woff'),
+       url('../fonts/BrandonText-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -38,7 +48,8 @@ h1 {
 body {
   background: var(--evergreen);
   color: var(--silver);
-  letter-spacing: .03rem;
+  letter-spacing: .05rem;
+  font-family: 'BrandonText-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 header {
   text-align: center;
