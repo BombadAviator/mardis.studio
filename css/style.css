@@ -37,12 +37,6 @@
   font-style: normal;
 }
 
-h1 {
-  letter-spacing: 2.2vw;
-  font-size: clamp(1rem, -0.6667rem + 7.4074vw, 6rem);
-  font-family: 'BrandonText-Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-}
-
   /* Objects
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
@@ -55,6 +49,12 @@ header {
   text-align: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
+}
+
+h1 {
+  letter-spacing: 2.2vw;
+  font-size: clamp(1rem, -0.6667rem + 7.4074vw, 6rem);
+  font-family: 'BrandonText-Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 .wrapper {
