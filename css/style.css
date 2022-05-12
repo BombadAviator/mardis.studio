@@ -1,17 +1,4 @@
-/* Colors
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-:root {
-  --evergreen: #264546;
-  --darkevergreen: #1D3435;
-  --silver: #EDECEB;
-  --copper: #A85F48;
-  --darkcopper: #92533F;
-  --sky: #ADC5D0;
-  --sherbert: #F99157;
-
-  --buttonprimary: #A85F48;
-  --buttonprimaryhover: #F99157;
-}
+@import url(chota.css);
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -37,66 +24,53 @@
   font-style: normal;
 }
 
+
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --bg-color: #3E454C;
+  --color-primary: #CB7D56;
+  --color-lightGrey: #DEDFCE;
+  --color-grey: #889CA2;
+  --color-darkGrey: #22262A;
+  --font-color: #DEDFCE;
+  --grid-maxWidth: 140rem;
+}
+
+
   /* Objects
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
-  background: var(--evergreen);
-  color: var(--silver);
-  letter-spacing: .05rem;
   font-family: 'BrandonText-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: .05rem;
 }
 header {
-  text-align: center;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin: 5rem auto;
 }
+
 
 h1 {
-  letter-spacing: 2.2vw;
-  font-size: clamp(1rem, -0.6667rem + 7.4074vw, 6rem);
   font-family: 'BrandonText-Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: 1rem;
 }
 
-.wrapper {
-    display: block;
-    position: relative;
-    width: 100%;
+h3 {
+  letter-spacing: .2rem;
 }
 
-.wrapper .container {
-  max-width: 90vw;
+.card {
+  border-radius: 18px;
+  border: 2px solid var(--color-darkGrey);
 }
-
-.projectstyle {
-  margin: 1rem;
-  border: 1px solid var(--darkevergreen);
-  border-radius: 6px;
-  text-align: center;
-  transition: border-color ease-in-out .3s;
+.card img {
+  border-radius: 8px;
 }
-.projectstyle:hover {
-  border: 1px solid var(--silver);
-  border-radius: 6px;
-  transition: border-color ease-in-out .3s;
+.card p:last-child {
+  margin: 0rem 6rem;
 }
-
-.projectstyle img{
-  padding: 10px 10px 4px 10px;
-  max-width: 96px;
+.card span {
+  color: var(--color-grey);
 }
-
-.button {
-  background-color: var(--copper);
-  border: 1px solid var(--darkevergreen);
-  transition: background-color ease-in-out .3s;
-}
-.button:hover {
-  background-color: var(--evergreen);
-  border: 1px solid var(--darkevergreen);
-  transition: background-color ease-in-out .3s;
-}
-
-
 
 
 /* Animation
