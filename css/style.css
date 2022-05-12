@@ -1,4 +1,4 @@
-@import url(chota.css);
+@import url(chota.min.css);
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -47,23 +47,26 @@ body {
 header {
   margin: 5rem auto;
 }
-
-
 h1 {
   font-family: 'BrandonText-Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   letter-spacing: 1rem;
 }
-
 h3 {
   letter-spacing: .2rem;
 }
-
 .card {
+  padding: 1rem;
   border-radius: 18px;
   border: 2px solid var(--color-darkGrey);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
 }
 .card img {
   border-radius: 8px;
+}
+.card h3, .card p {
+
 }
 .card p:last-child {
   margin: 0rem 6rem;
