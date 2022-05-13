@@ -4,25 +4,44 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @font-face {
-  font-family: 'BrandonText-Bold';
-  src: url('../fonts/BrandonText-Bold.eot');
-  src: url('../fonts/BrandonText-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/BrandonText-Bold.ttf') format('truetype'),
-       url('../fonts/BrandonText-Bold.woff') format('woff'),
-       url('../fonts/BrandonText-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'Brandon Text';
+    src: url('../fonts/BrandonText-RegularItalic.eot');
+    src: local('Brandon Text Regular Italic'), local('BrandonText-RegularItalic'),
+        url('../fonts/BrandonText-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrandonText-RegularItalic.woff2') format('woff2'),
+        url('../fonts/BrandonText-RegularItalic.woff') format('woff'),
+        url('../fonts/BrandonText-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
+
 @font-face {
-  font-family: 'BrandonText-Regular';
-  src: url('../fonts/BrandonText-Regular.eot');
-  src: url('../fonts/BrandonText-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/BrandonText-Regular.ttf') format('truetype'),
-       url('../fonts/BrandonText-Regular.woff') format('woff'),
-       url('../fonts/BrandonText-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Brandon Text';
+    src: url('../fonts/BrandonText-Regular.eot');
+    src: local('Brandon Text Regular'), local('BrandonText-Regular'),
+        url('../fonts/BrandonText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrandonText-Regular.woff2') format('woff2'),
+        url('../fonts/BrandonText-Regular.woff') format('woff'),
+        url('../fonts/BrandonText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Brandon Text';
+    src: url('../fonts/BrandonText-Bold.eot');
+    src: local('Brandon Text Bold'), local('BrandonText-Bold'),
+        url('../fonts/BrandonText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrandonText-Bold.woff2') format('woff2'),
+        url('../fonts/BrandonText-Bold.woff') format('woff'),
+        url('../fonts/BrandonText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 /* Colors
