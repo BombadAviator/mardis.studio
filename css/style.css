@@ -141,6 +141,12 @@ div.col a:hover .hovertext {
 }
 
 
+/* Fixes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button{
+  -webkit-transform: translateZ(0);
+}
+
 /* H1 Animation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
