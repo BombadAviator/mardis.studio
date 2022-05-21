@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>MARDIS.STUDIO</title>
-  <meta name="description" content="The Mardis Studio serves as a portfolio of all phisical and digital project that the Mardi' work on.">
+  <meta name="description"
+    content="The Mardis Studio serves as a portfolio of all phisical and digital project that the Mardi' work on.">
   <meta name="author" content="Tanner and Levi Mardis">
 
   <!-- Mobile Specific Metas
@@ -27,19 +29,21 @@
   <script src="scripts/anime.min.js"></script>
 
 </head>
+
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <main class="container">
-      <header class="text-center">
-            <div class="col">
-              <h1 class="ml12">MARDIS.STUDIO</h1>
-              <p class="text-grey">Clean code, pixels in order, good brews, stuff made by hand, these are a few of our favorite things.</p>
-              <a class="button primary" href="mailto:howdy@mardis.studio">Talk to a Mardis</a>
-            </div>
-      </header>
+    <header class="text-center">
+      <div class="col">
+        <h1 class="ml12">MARDIS.STUDIO</h1>
+        <p class="text-grey">Clean code, pixels in order, good brews, stuff made by hand, these are a few of our
+          favorite things.</p>
+        <a class="button primary" href="mailto:howdy@mardis.studio">Talk to a Mardis</a>
+      </div>
+    </header>
 
 
 
@@ -62,8 +66,9 @@
           <div class="card text-light">
             <img src="images/mardis_apparel@2x.jpg" alt="Macrame wall decor">
             <div class="hovertext">
-              <h3>MARDIS APPREL<br>-</h3>
-              <p>A successful kickstarter campaign for a limited edition run of shirts.<br><span>by Tanner Mardis </span></p>
+              <h3>MARDIS APPAREL<br>-</h3>
+              <p>A successful kickstarter campaign for a limited edition run of shirts.<br><span>by Tanner Mardis
+                </span></p>
             </div>
           </div>
         </a>
@@ -75,7 +80,8 @@
             <img src="images/coffee_collective@2x.jpg" alt="Macrame wall decor">
             <div class="hovertext">
               <h3>COFFEE TIMER APP<br>-</h3>
-              <p>Born out of a passion for coffee and a desire to make a better cup.<br><span>by Tanner &#38; Levi Mardis</span></p>
+              <p>Born out of a passion for coffee and a desire to make a better cup.<br><span>by Tanner &#38; Levi
+                  Mardis</span></p>
             </div>
           </div>
         </a>
@@ -84,25 +90,26 @@
     </section>
   </main>
 
-<!-- Animation
+  <!-- Animation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <script>
-      // Wrap every letter in a span
+    // Wrap every letter in a span
     var textWrapper = document.querySelector('.ml12');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-    anime.timeline({loop: false})
-    .add({
-      targets: '.ml12 .letter',
-      translateX: [40,0],
-      translateZ: 0,
-      opacity: [0,1],
-      easing: "easeOutExpo",
-      duration: 1200,
-      delay: (el, i) => 500 + 30 * i
-    });
-    </script>
+    anime.timeline({ loop: false })
+      .add({
+        targets: '.ml12 .letter',
+        translateX: [40, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: (el, i) => 500 + 30 * i
+      });
+  </script>
 
 </body>
+
 </html>
