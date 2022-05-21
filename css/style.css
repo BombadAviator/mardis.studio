@@ -60,18 +60,20 @@
   /* Objects
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
-  font-family: 'BrandonText-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Brandon Text', 'Helvetica Neue', 'Helvetica', sans-serif;
   letter-spacing: .05rem;
+  font-weight: normal;
 }
 header {
   margin: 5rem auto;
 }
 h1 {
-  font-family: 'BrandonText-Bold', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   letter-spacing: 1rem;
+  font-weight: bold;
 }
 h3 {
   letter-spacing: .2rem;
+  text-transform: uppercase;
 }
 .card {
   padding: 1rem;
@@ -82,7 +84,6 @@ h3 {
   position: relative;
   height: 98.5%;
 }
-
 .card img {
   border-radius: 8px;
   transition: all .2s ease-in-out;
@@ -92,17 +93,16 @@ h3 {
 }
 .card span {
   color: var(--color-grey);
+  font-style: italic;
 }
 
-
-/* Hover Effects
+/* Card Hover Effects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
 div.col a:hover img {
   opacity: 20%;
   filter: saturate(0);
-  transition: all .2s ease-in-out;
 }
 
 .hovertext {
@@ -140,4 +140,10 @@ div.col a:hover .hovertext {
 .ml12 .letter {
   display: inline-block;
   line-height: 1em;
+}
+
+/* Fixes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button{
+  -webkit-transform: translateZ(0);
 }
