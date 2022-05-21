@@ -4,42 +4,42 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @font-face {
-    font-family: 'Brandon Text';
-    src: url('../fonts/BrandonText-RegularItalic.eot');
-    src: local('Brandon Text Regular Italic'), local('BrandonText-RegularItalic'),
-        url('../fonts/BrandonText-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/BrandonText-RegularItalic.woff2') format('woff2'),
-        url('../fonts/BrandonText-RegularItalic.woff') format('woff'),
-        url('../fonts/BrandonText-RegularItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Brandon Text';
+  src: url('../fonts/BrandonText-RegularItalic.eot');
+  src: local('Brandon Text Regular Italic'), local('BrandonText-RegularItalic'),
+    url('../fonts/BrandonText-RegularItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BrandonText-RegularItalic.woff2') format('woff2'),
+    url('../fonts/BrandonText-RegularItalic.woff') format('woff'),
+    url('../fonts/BrandonText-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Brandon Text';
-    src: url('../fonts/BrandonText-Regular.eot');
-    src: local('Brandon Text Regular'), local('BrandonText-Regular'),
-        url('../fonts/BrandonText-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/BrandonText-Regular.woff2') format('woff2'),
-        url('../fonts/BrandonText-Regular.woff') format('woff'),
-        url('../fonts/BrandonText-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Brandon Text';
+  src: url('../fonts/BrandonText-Regular.eot');
+  src: local('Brandon Text Regular'), local('BrandonText-Regular'),
+    url('../fonts/BrandonText-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BrandonText-Regular.woff2') format('woff2'),
+    url('../fonts/BrandonText-Regular.woff') format('woff'),
+    url('../fonts/BrandonText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Brandon Text';
-    src: url('../fonts/BrandonText-Bold.eot');
-    src: local('Brandon Text Bold'), local('BrandonText-Bold'),
-        url('../fonts/BrandonText-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/BrandonText-Bold.woff2') format('woff2'),
-        url('../fonts/BrandonText-Bold.woff') format('woff'),
-        url('../fonts/BrandonText-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Brandon Text';
+  src: url('../fonts/BrandonText-Bold.eot');
+  src: local('Brandon Text Bold'), local('BrandonText-Bold'),
+    url('../fonts/BrandonText-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BrandonText-Bold.woff2') format('woff2'),
+    url('../fonts/BrandonText-Bold.woff') format('woff'),
+    url('../fonts/BrandonText-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -57,24 +57,28 @@
 }
 
 
-  /* Objects
+/* Objects
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
   font-family: 'Brandon Text', 'Helvetica Neue', 'Helvetica', sans-serif;
   letter-spacing: .05rem;
   font-weight: normal;
 }
+
 header {
   margin: 5rem auto;
 }
+
 h1 {
   letter-spacing: 1rem;
   font-weight: bold;
 }
+
 h3 {
   letter-spacing: .2rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
+
 .card {
   padding: 1rem;
   border-radius: 18px;
@@ -88,9 +92,11 @@ h3 {
   border-radius: 8px;
   transition: all .2s ease-in-out;
 }
+
 .card p:last-child {
   margin: 0rem 6rem;
 }
+
 .card span {
   color: var(--color-grey);
   font-style: italic;
@@ -124,10 +130,12 @@ div.col a:hover .hovertext {
   visibility: visible;
   opacity: 1;
 }
+
 .hovertext {
   transition: .2s ease-in-out;
   transform: translateY(1em);
 }
+
 .card:hover .hovertext {
   transform: translateY(0);
 }
@@ -140,10 +148,4 @@ div.col a:hover .hovertext {
 .ml12 .letter {
   display: inline-block;
   line-height: 1em;
-}
-
-/* Fixes
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button{
-  -webkit-transform: translateZ(0);
 }
