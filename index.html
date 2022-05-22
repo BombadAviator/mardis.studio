@@ -28,6 +28,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="scripts/anime.min.js"></script>
 
+  <script>
+    if (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add('dark');
+    }
+  </script>
+
 </head>
 
 <body>
@@ -41,7 +48,7 @@
         <h1 class="ml12">MARDIS.STUDIO</h1>
         <p class="text-grey">Clean code, pixels in order, good brews, stuff made by hand, these are a few of our
           favorite things.</p>
-        <a class="button primary" href="mailto:howdy@mardis.studio">Talk to a Mardis</a>
+        <a class="button" href="mailto:howdy@mardis.studio">Talk to a Mardis</a>
       </div>
     </header>
 
