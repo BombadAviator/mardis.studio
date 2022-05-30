@@ -61,14 +61,23 @@
 
 /* Objects
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
 body {
   font-family: 'Brandon Text', 'Helvetica Neue', 'Helvetica', sans-serif;
   letter-spacing: .08rem;
   font-weight: normal;
+  background: linear-gradient(to bottom, #B0D169, #7AB3C5);
+  padding: 1rem;
 }
 
-header {
-  margin: 5rem auto;
+main {
+  background: var(--bg-color);
+  padding-bottom: 12rem;
+}
+
+header, section {
+  padding-top: 12rem;
 }
 
 h1 {
@@ -105,7 +114,7 @@ h3 {
 }
 
 .card p:last-child {
-  margin: 0rem 6rem;
+  margin: 0rem 6rem 3rem 6rem;
 }
 
 .card span {
@@ -127,35 +136,13 @@ h3 {
   border: 2px solid var(--color-lightGrey);
 }
 
-div.col a:hover img {
+/*div.col a:hover img {
   opacity: 10%;
   filter: saturate(0);
-}
+}*/
 
-.hovertext {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  visibility: hidden;
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: .4s ease-in-out;
-  transform: translateY(1em);
-}
 
-div.col a:hover .hovertext {
-  visibility: visible;
-  opacity: 1;
-}
 
-.card:hover .hovertext {
-  transform: translateY(0);
-}
 
 
 /* Fixes
