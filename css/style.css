@@ -61,7 +61,9 @@
 
 /* Objects
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+html {
+  background: var(--bg-color);
+}
 
 body {
   font-family: 'Brandon Text', 'Helvetica Neue', 'Helvetica', sans-serif;
