@@ -18,27 +18,30 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/style.css">
- 
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/favicon.png">
 
-  <!-- Scripts
+  <!-- Scripts - Special thanks to the Lottiefiles team and catdad for these scripts.
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="scripts/anime.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 
-  <script>
-    if (window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.body.classList.add('dark');
-    }
-  </script>
+  <!--<script>
+    let html = document.documentElement;
+    let deg = 0;
+    let tick = () => {
+      html.style.background = `background linear-gradient(${deg++}deg, #B0D169, #7AB3C5)`;
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  </script>-->
 
 </head>
 
-<body>
+<body class="anigrad">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -46,22 +49,18 @@
   <div class="container">
     <header class="text-center">
       <div class="col">
-
         <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_huravoxq.json"  background="transparent" speed=".7" autoplay></lottie-player>
-
-
-
       </div>
     </header>
 
     <section class="row">
-      <div class="col text-center">
+      <div class="col">
         <hr class="bg-primary">
       </div>
       <div class="col text-center">
         <h3>What We Do</h3>
       </div>
-      <div class="col text-center">
+      <div class="col">
         <hr class="bg-primary">
       </div>
     </section>
@@ -81,23 +80,23 @@
       </div>
 
 
-      <div class="col text-center">
+      <div class="col">
       </div>
 
-      <div class="col text-center">
+      <div class="col">
       </div>
     </section>
 
 
 
     <section class="row">
-      <div class="col text-center">
+      <div class="col">
         <hr class="bg-primary">
       </div>
       <div class="col text-center">
         <h3>Who We Are</h3>
       </div>
-      <div class="col text-center">
+      <div class="col">
         <hr class="bg-primary">
       </div>
     </section>
@@ -106,52 +105,51 @@
     <section class="row">
 
       <div class="col text-center">
-        <a target="_blank" href="https://tannermardis.com/">
           <div class="card text-light">
             <img src="images/tannermardis@2x.jpg" alt="Macrame wall decor">
-            <div class="hovertext">
-              <h3>Tanner Mardis<br>-</h3>
-              <p>Photography and graphic design, with a love for good design and well crafted branding.<br><span>Design</span></p>
-            </div>
+
+              <h3 class="is-marginless">Tanner Mardis</h3>
+              <p><span>Design</span><br>-<br>Passionate about good design, proficient in pushing pixels. Jesus, family, people, coffee & Star Wars.</p>
+
+              <div class="row">
+                <div class="col"><object type="image/svg+xml" data="images/dribbble.svg">Dribbble</object></div>
+                <div class="col"><object type="image/svg+xml" data="images/twitter.svg">Twitter</object></div>
+                <div class="col"><object type="image/svg+xml" data="images/gallery.svg">Photography</object></div>
+                <div class="col"><object type="image/svg+xml" data="images/photoshop.svg">Photoshop</object></div>
+                <div class="col"><object type="image/svg+xml" data="images/illustrator.svg">Illustrator</object></div>
+                <div class="col"><object type="image/svg+xml" data="images/figma.svg">Figma</object></div>
+              </div>
+
+
           </div>
-        </a>
+        <a href="mailto:tanner@mardis.studio" class="button">Email Tanner</a>
       </div>
 
       <div class="col text-center">
-        <a target="_blank" href="https://tannermardis.com/">
           <div class="card text-light">
-            <img src="images/tannermardis@2x.jpg" alt="Macrame wall decor">
-            <div class="hovertext">
-              <h3>Levi Mardis<br>-</h3>
-              <p>Clean code and clutch plays, with a strong mind for solving the problem and getting the job done.<br><span>Development</span></p>
-            </div>
+            <img src="images/levi@2x.jpg" alt="Macrame wall decor">
+
+              <h3 class="is-marginless">Levi Mardis</h3>
+              <p><span>Development</span><br>-<br>Solving problems and making clutch plays with a keyboard.</p>
+
+              <div class="row">
+                <div class="col"><object type="image/svg+xml" data="images/game.svg">Video Games</object></div>
+                <div class="col"><object type="image/svg+xml" data="images/html-5.svg">HTML 5</object></div>
+                <div class="col"><object type="image/svg+xml" data="images/css-3.svg">CSS 3</object></div>
+                <div class="col"><object type="image/svg+xml" data="images/java-script.svg">JavaScript</object></div>
+                <div class="col"><object type="image/svg+xml" data="images/js.svg">JS</object></div>
+                <div class="col"><object type="image/svg+xml" data="images/react.svg">React</object></div>
+              </div>
+
+
           </div>
-        </a>
+        <a href="mailto:levi@mardis.studio" class="button">Email Levi</a>
       </div>
 
     </section>
   </div>
 </main>
 
-  <!-- Animation
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <script>
-    // Wrap every letter in a span
-    var textWrapper = document.querySelector('.ml12');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline({ loop: false })
-      .add({
-        targets: '.ml12 .letter',
-        translateX: [40, 0],
-        translateZ: 0,
-        opacity: [0, 1],
-        easing: "easeOutExpo",
-        duration: 1200,
-        delay: (el, i) => 500 + 30 * i
-      });
-  </script>
 
 </body>
 
