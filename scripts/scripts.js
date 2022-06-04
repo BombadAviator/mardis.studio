@@ -10,3 +10,11 @@ for (let i = 0; i < buttons.length; i++) {
         })
     })
 }
+
+jlottie.loadAnimation({
+container: document.getElementById('my-animation'),
+loop: false,
+autoplay: true,
+useWebWorker: true,
+path: 'scripts/mardisstudio.json',
+});
