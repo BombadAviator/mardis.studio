@@ -135,6 +135,10 @@ hr {
   font-style: italic;
 }
 
+#lottie {
+  
+}
+
 /* Hover Effects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -161,9 +165,6 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button{
   -webkit-transform: translateZ(0);
-}
-svg:not(:root) {
-  overflow: visible;
 }
 
 /* Animation
