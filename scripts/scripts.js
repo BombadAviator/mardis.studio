@@ -15,7 +15,5 @@ jlottie.loadAnimation({
         container: document.getElementById('lottie'), // the dom element that will contain the animation
         loop: false,
         autoplay: true,
-        path: 'https://assets2.lottiefiles.com/packages/lf20_huravoxq.json', // the path to the animation json
-        //debug: true,
-        //debugContainer: document.getElementById('debug'),
+        path: 'mardisstudio.json', // the path to the animation json
       });
