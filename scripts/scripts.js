@@ -15,5 +15,5 @@ jlottie.loadAnimation({
         container: document.getElementById('lottie'), // the dom element that will contain the animation
         loop: false,
         autoplay: true,
-        path: 'mardisstudio.json', // the path to the animation json
+        path: 'https://mardis.studio/scripts/title.json', // the path to the animation json
       });

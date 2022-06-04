@@ -162,6 +162,9 @@ hr {
 .button{
   -webkit-transform: translateZ(0);
 }
+svg:not(:root) {
+  overflow: visible;
+}
 
 /* Animation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
