@@ -11,9 +11,12 @@ for (let i = 0; i < buttons.length; i++) {
     })
 }
 
-jlottie.loadAnimation({
-        container: document.getElementById('test'), // the dom element that will contain the animation
-        loop: false,
-        autoplay: true,
-        path: 'https://mardis.studio/scripts/title.json', // the path to the animation json
-      });
+
+
+var animation = lottie.loadAnimation({
+  container: document.getElementById('lottie'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'title.json' // the path to the animation json
+});
