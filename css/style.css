@@ -126,8 +126,8 @@ hr {
   transition: all .3s ease-in-out;
 }
 
-.card p:last-child {
-  margin: 0rem 6rem 3rem 6rem;
+.card p, .card p:last-child {
+  margin: 0rem 2rem 2rem 2rem;
 }
 
 .card span {
