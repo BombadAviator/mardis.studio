@@ -179,9 +179,6 @@ flex: 1 1 auto;
 
 /* Animation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.card::before {
-  content: attr(data-timing);
-}
 
 .fadeBox {
   opacity: var(--o);
