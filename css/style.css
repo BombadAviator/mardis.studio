@@ -132,6 +132,7 @@ flex: 1 1 auto;
   height: 98.4%;
   transition: .2s ease-in-out;
 }
+
 .card img {
   border-radius: 4px;
   transition: all .3s ease-in-out;
@@ -155,9 +156,6 @@ flex: 1 1 auto;
 /* Hover Effects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-
-
-
 .card:hover {
   border: 2px solid var(--color-lightGrey);
 }
@@ -167,17 +165,11 @@ flex: 1 1 auto;
   filter: saturate(0);
 }
 
-
 .button:hover {
   background: var(--color-green);
   opacity: 1;
 }
-
-
 */
-
-
-
 
 /* Fixes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -187,7 +179,13 @@ flex: 1 1 auto;
 
 /* Animation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.card::before {
+  content: attr(data-timing);
+}
 
+.fadeBox {
+  opacity: var(--o);
+}
 
 .anigrad, .button:hover {
     background: linear-gradient(0deg, #B0D169, #7AB3C5);
