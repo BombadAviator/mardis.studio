@@ -123,6 +123,7 @@ flex: 1 1 auto;
 }
 
 .card {
+  background: none;
   padding: .8rem;
   border-radius: 12px;
   border: 2px solid var(--color-darkGrey);
@@ -130,7 +131,6 @@ flex: 1 1 auto;
   box-shadow: none;
   position: relative;
   height: 98.4%;
-  transition: .2s ease-in-out;
 }
 
 .card img {
@@ -184,32 +184,33 @@ flex: 1 1 auto;
   opacity: var(--o);
 }
 
+
 .anigrad, .button:hover {
     background: linear-gradient(0deg, #B0D169, #7AB3C5);
     background-size: 400% 400%;
     -webkit-animation: AnimationName 8s ease infinite;
-    -moz-animation: AnimationName 8s ease infinite;
-    -o-animation: AnimationName 8s ease infinite;
-    animation: AnimationName 8s ease infinite;
+    -moz-animation: GradBorder 8s ease infinite;
+    -o-animation: GradBorder 8s ease infinite;
+    animation: GradBorder 8s ease infinite;
     opacity: 1;
     transition: .4s ease-in-out;
 }
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes GradBorder {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
     100%{background-position:51% 0%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes GradBorder {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
     100%{background-position:51% 0%}
 }
-@-o-keyframes AnimationName {
+@-o-keyframes GradBorder {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
     100%{background-position:51% 0%}
 }
-@keyframes AnimationName {
+@keyframes GradBorder {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
     100%{background-position:51% 0%}
