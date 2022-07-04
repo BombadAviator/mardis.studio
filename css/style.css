@@ -135,8 +135,8 @@ flex: 1 1 auto;
 
 .card img {
   border-radius: 4px;
-  transition: all .3s ease-in-out;
 }
+
 
 .card p, .card p:last-child {
   margin: 0rem 2rem 2rem 2rem;
