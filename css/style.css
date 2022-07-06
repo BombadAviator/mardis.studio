@@ -137,6 +137,13 @@ flex: 1 1 auto;
   border-radius: 4px;
 }
 
+.cardPhoto {
+  background-image: url("../images/lego/legosprite.jpg");
+  background-repeat: no-repeat;
+  background-size: 406px;
+  height: 406px;
+  border-radius: 4px;
+}
 
 .card p, .card p:last-child {
   margin: 0rem 2rem 2rem 2rem;
@@ -186,6 +193,10 @@ flex: 1 1 auto;
 
 .fadeBox {
   opacity: var(--o);
+}
+
+.cardPhoto {
+  background-position: 0px var(--cp);
 }
 
 .anigrad, a.button:hover {

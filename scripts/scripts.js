@@ -1,3 +1,5 @@
+// Confetti Controlers
+
 const buttons = document.querySelectorAll('.button')
 
 for (let i = 0; i < buttons.length; i++) {
@@ -10,6 +12,8 @@ for (let i = 0; i < buttons.length; i++) {
         })
     })
 }
+
+// mardis.studio Lottie Controlers
 
 var animation = lottie.loadAnimation({
   container: document.getElementById('lottie'), // the dom element that will contain the animation
@@ -49,8 +53,6 @@ const fadeBox = basicScroll.create({
   elem: document.querySelector('.fadeBox'),
   from: 'top-bottom',
   to: 'top-middle',
-  inside: (instance, percentage, props) => console.log('fadeBox is animating'),
-  outside: (instance, percentage, props) => console.log('fadeBox is not animating'),
   props: {
     '--o': {
       from: .01,
@@ -60,5 +62,18 @@ const fadeBox = basicScroll.create({
 });
 
 
+const cardPhoto = basicScroll.create({
+  elem: document.querySelector('.cardPhoto'),
+  from: 'top-bottom',
+  to: 'bottom-top',
+  props: {
+    '--cp': {
+      from: '0px',
+      to: '-11900px'
+    }
+  }
+});
+
+cardPhoto.start();
 fadeBox.start();
 easeBoxes.forEach(easeBox => easeBox.start());
