@@ -49,8 +49,6 @@ const fadeBox = basicScroll.create({
   elem: document.querySelector('.fadeBox'),
   from: 'top-bottom',
   to: 'top-middle',
-  inside: (instance, percentage, props) => console.log('fadeBox is animating'),
-  outside: (instance, percentage, props) => console.log('fadeBox is not animating'),
   props: {
     '--o': {
       from: .01,

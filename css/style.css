@@ -108,6 +108,12 @@ hr {
   margin: 3rem 0rem;
 }
 
+#lottie {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 340 / 130;
+}
+
 .nowrap {
 flex: 1 1 auto;
 }
@@ -121,6 +127,10 @@ flex: 1 1 auto;
   box-shadow: none;
   position: relative;
   height: 98.4%;
+}
+
+.card .row{
+  height: 32px;
 }
 
 .card a.button {
@@ -147,11 +157,7 @@ flex: 1 1 auto;
   font-style: italic;
 }
 
-#lottie {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 340 / 130;
-}
+
 
 /* Hover Effects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -188,7 +194,7 @@ flex: 1 1 auto;
   opacity: var(--o);
 }
 
-.anigrad, a.button:hover {
+.anigrad {
     background: linear-gradient(0deg, #B0D169, #7AB3C5);
     background-size: 400% 400%;
     -webkit-animation: AnimationName 8s ease infinite;
