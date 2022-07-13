@@ -69,7 +69,7 @@ const cardPhoto = basicScroll.create({
   props: {
     '--cp': {
       from: '0px',
-      to: '-11900px'
+      to: '-17400px'
     }
   }
 });

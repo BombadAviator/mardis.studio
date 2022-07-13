@@ -140,8 +140,8 @@ flex: 1 1 auto;
 .cardPhoto {
   background-image: url("../images/lego/stopmotionlego.jpg");
   background-repeat: no-repeat;
-  background-size: 406px;
-  height: 406px;
+  background-size: 426px;
+  height: 426px;
   border-radius: 4px;
 }
 
