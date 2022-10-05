@@ -16,7 +16,7 @@ var animation = lottie.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: true,
-  path: 'https://mardis.studio/scripts/title.json' // the path to the animation json
+  path: 'https://mardis.studio/scripts/mardisstudio.json' // the path to the animation json
 });
 
 
