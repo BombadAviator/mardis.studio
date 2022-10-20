@@ -1,15 +1,42 @@
-const buttons = document.querySelectorAll('.button')
 
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', () => {
-        console.log('test')
-        confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: .5 }
-        })
-    })
-}
+/*
+
+Lottie by: Jeffrey Christopher
+
+https://lottiefiles.com/zeffchris
+
+*/
+
+const scrollbar = Scrollbar.init(document.querySelector(".lottiecontainer"), {
+  renderByPixels: false
+});
+
+let lottieProgress = lottie.loadAnimation({
+  container: document.querySelector(".lottie-progress"),
+  renderer: "svg",
+  loop: false,
+  autoplay: false,
+  path: "https://mardis.studio/scripts/mardisstudio10.json"
+});
+
+scrollbar.addListener(() => {
+  let totalHeight = scrollbar.limit.y;
+  let scrollFromTop = scrollbar.scrollTop;
+  let totalFrames = lottieProgress.totalFrames;
+  let scrollPercentage = (scrollFromTop * 100) / totalHeight;
+  let scrollPercentRounded = Math.round(scrollPercentage); // Just in case
+
+  // Check if the current frame is the last frame. If it's the last frame, do nothing. This prevents showing the empty frame at the end. Thanks Pauline for pointing out.
+  if ((scrollPercentage * totalFrames) / 100 < totalFrames) {
+    lottieProgress.goToAndStop((scrollPercentage * totalFrames) / 100, true);
+  } else {
+    return;
+  }
+});
+
+
+
+
 
 var animation = lottie.loadAnimation({
   container: document.getElementById('lottie'), // the dom element that will contain the animation
@@ -45,8 +72,8 @@ document.querySelectorAll('.easeBox').forEach((elem, i) => {
         timing: timing } } }));
 });
 
-const fadeBox = basicScroll.create({
-  elem: document.querySelector('.fadeBox'),
+const fadeIn = basicScroll.create({
+  elem: document.querySelector('.fadeIn'),
   from: 'top-bottom',
   to: 'top-middle',
   props: {
@@ -58,5 +85,8 @@ const fadeBox = basicScroll.create({
 });
 
 
-fadeBox.start();
+
+
+fadeIn.start();
+
 easeBoxes.forEach(easeBox => easeBox.start());

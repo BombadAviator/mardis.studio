@@ -170,6 +170,10 @@ flex: 1 1 auto;
   font-style: italic;
 }
 
+.fadebg {
+  background: rgb(62,69,77);
+  background: linear-gradient(0deg, rgba(62,69,77,1) 0%, rgba(62,69,77,0) 100%);
+}
 
 /* Spacing Classes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -204,7 +208,7 @@ flex: 1 1 auto;
 
 .lottie-progress {
   height: auto;
-  width: 1400px;
+  max-width: 1400px;
   position: fixed;
   margin: 0px auto;
 
@@ -214,9 +218,14 @@ flex: 1 1 auto;
   transform: translateY(var(--ty));
 }
 
-.fadeBox {
+.fadeIn {
   opacity: var(--o);
 }
+
+.fadeOut {
+  opacity: var(--o);
+}
+
 
 .anigrad {
     background: linear-gradient(0deg, #B0D169, #7AB3C5);

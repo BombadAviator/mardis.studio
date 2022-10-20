@@ -41,9 +41,8 @@
   <!-- Scripts - Special thanks to the Lottiefiles team and catdad for these scripts.
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="scripts/lottie.min.js" type="application/javascript"></script>
-  <script src="scripts/confetti.min.js" type="application/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js" type="application/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js" type="application/javascript"></script>
+
 
 
 
@@ -82,10 +81,10 @@
 
 
 
-      <section class="row">
+      <section class="row fadebg">
         <div class="col-2"></div>
         <div class="col-4 text-center">
-          <div class="easeBox fadeBox card text-light">
+          <div class="easeBox fadeIn card text-light">
             <div class="cardphoto"></div>
             <img src="images/tannermardis@2x.jpg" alt="picture of Tanner as a lego minifigure" />
 
@@ -121,7 +120,7 @@
         </div>
 
         <div class="col-4 text-center">
-          <div class="easeBox fadeBox card text-light">
+          <div class="easeBox fadeIn card text-light">
             <img src="images/levi@2x.jpg" alt="picture of Levi as a lego minifigure" />
 
             <h3 class="is-marginless">Levi Mardis</h3>
@@ -162,43 +161,7 @@
   </main>
   <script src="scripts/basicScroll.min.js"></script>
   <script src="scripts/scripts.js"></script>
-  <script>
-  /*
 
-  Lottie by: Jeffrey Christopher
-
-  https://lottiefiles.com/zeffchris
-
-  */
-
-  const scrollbar = Scrollbar.init(document.querySelector(".lottiecontainer"), {
-    renderByPixels: false
-  });
-
-  let lottieProgress = lottie.loadAnimation({
-    container: document.querySelector(".lottie-progress"),
-    renderer: "svg",
-    loop: false,
-    autoplay: false,
-    path: "https://mardis.studio/scripts/mardisstudio10.json"
-  });
-
-  scrollbar.addListener(() => {
-    let totalHeight = scrollbar.limit.y;
-    let scrollFromTop = scrollbar.scrollTop;
-    let totalFrames = lottieProgress.totalFrames;
-    let scrollPercentage = (scrollFromTop * 100) / totalHeight;
-    let scrollPercentRounded = Math.round(scrollPercentage); // Just in case
-
-    // Check if the current frame is the last frame. If it's the last frame, do nothing. This prevents showing the empty frame at the end. Thanks Pauline for pointing out.
-    if ((scrollPercentage * totalFrames) / 100 < totalFrames) {
-      lottieProgress.goToAndStop((scrollPercentage * totalFrames) / 100, true);
-    } else {
-      return;
-    }
-  });
-
-  </script>
 </body>
 
 </html>
