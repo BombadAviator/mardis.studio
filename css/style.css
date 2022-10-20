@@ -103,6 +103,7 @@ img {
   position: -webkit-sticky;
   position: sticky;
   top: 180px;
+  z-index: -2;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
