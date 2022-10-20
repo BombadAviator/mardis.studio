@@ -80,6 +80,7 @@ body {
   letter-spacing: .08rem;
   font-weight: normal;
   padding: 1rem;
+  overflow-x: hidden;
 }
 
 main {
@@ -112,6 +113,18 @@ hr {
   width: 100%;
   height: 100%;
   aspect-ratio: 340 / 130;
+}
+
+.lottiecontainer {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.content {
+  height: 3000px;
+
 }
 
 .nowrap {
@@ -158,6 +171,13 @@ flex: 1 1 auto;
 }
 
 
+/* Spacing Classes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.SMT1000 {
+  margin-top: 1000px;
+}
+
+
 
 /* Hover Effects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -177,14 +197,18 @@ flex: 1 1 auto;
 }
 */
 
-/* Fixes
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button{
-  -webkit-transform: translateZ(0);
-}
+
 
 /* Animation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.lottie-progress {
+  height: auto;
+  width: 1400px;
+  position: fixed;
+  margin: 0px auto;
+
+}
 
 .easeBox {
   transform: translateY(var(--ty));
@@ -223,4 +247,11 @@ flex: 1 1 auto;
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
     100%{background-position:51% 0%}
+}
+
+
+/* Fixes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button{
+  -webkit-transform: translateZ(0);
 }

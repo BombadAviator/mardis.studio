@@ -42,6 +42,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="scripts/lottie.min.js" type="application/javascript"></script>
   <script src="scripts/confetti.min.js" type="application/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js" type="application/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js" type="application/javascript"></script>
+
+
 
   <!--
   <script>
@@ -52,61 +56,31 @@
   </script>
 -->
 
+
+
 </head>
 
 <body class="anigrad">
   <main>
+
+
+    <div style="width: 1400px; margin: 0px auto;"><div class="lottie-progress"></div></div>
+    <div class="lottiecontainer">
+        <div class="content"></div>
+    </div>
+
+
     <div class="container">
-      <header class="text-center">
+
+      <!--<header class="text-center">
         <div class="col">
+
           <div id="lottie" class="easeBox"></div>
-        </div>
-      </header>
 
-      <!--<section class="row">
-        <div class="col">
-          <hr class="anigrad">
-        </div>
-        <div class="col text-center">
-          <h3>What We Do</h3>
-        </div>
-        <div class="col">
-          <hr class="anigrad">
-        </div>
-      </section>
+          </div>
+      </header>-->
 
-      <section class="row">
-        <div class="col text-center">
-          <a target="_blank" href="https://coffeecollectiveapp.com">
-            <div class="card text-light">
-              <img src="images/coffee_collective@2x.jpg" alt="hand holding iphone displaying coffee timer app" />
-              <div class="hovertext">
-                <h3>Coffee Timer App<br />-</h3>
-                <p>
-                  Born out of a passion for coffee and a desire to make a
-                  better cup.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
 
-        <div class="col"></div>
-
-        <div class="col"></div>
-      </section>-->
-
-      <section class="row">
-        <div class="col">
-          <hr class="anigrad">
-        </div>
-        <div class="col text-center">
-          <h3>Who We Are</h3>
-        </div>
-        <div class="col">
-          <hr class="anigrad">
-        </div>
-      </section>
 
       <section class="row">
         <div class="col-2"></div>
@@ -183,10 +157,48 @@
         </div>
         <div class="col-2"></div>
       </section>
+
     </div>
   </main>
   <script src="scripts/basicScroll.min.js"></script>
   <script src="scripts/scripts.js"></script>
+  <script>
+  /*
+
+  Lottie by: Jeffrey Christopher
+
+  https://lottiefiles.com/zeffchris
+
+  */
+
+  const scrollbar = Scrollbar.init(document.querySelector(".lottiecontainer"), {
+    renderByPixels: false
+  });
+
+  let lottieProgress = lottie.loadAnimation({
+    container: document.querySelector(".lottie-progress"),
+    renderer: "svg",
+    loop: false,
+    autoplay: false,
+    path: "https://mardis.studio/scripts/mardisstudio10.json"
+  });
+
+  scrollbar.addListener(() => {
+    let totalHeight = scrollbar.limit.y;
+    let scrollFromTop = scrollbar.scrollTop;
+    let totalFrames = lottieProgress.totalFrames;
+    let scrollPercentage = (scrollFromTop * 100) / totalHeight;
+    let scrollPercentRounded = Math.round(scrollPercentage); // Just in case
+
+    // Check if the current frame is the last frame. If it's the last frame, do nothing. This prevents showing the empty frame at the end. Thanks Pauline for pointing out.
+    if ((scrollPercentage * totalFrames) / 100 < totalFrames) {
+      lottieProgress.goToAndStop((scrollPercentage * totalFrames) / 100, true);
+    } else {
+      return;
+    }
+  });
+
+  </script>
 </body>
 
 </html>
