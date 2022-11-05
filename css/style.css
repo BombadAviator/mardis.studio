@@ -231,7 +231,7 @@ img {
 
 .button {
   position: relative;
-  top: 30px;
+  bottom: -30px;
   padding-right: 32px;
   padding-left: 32px;
   border-style: solid;
